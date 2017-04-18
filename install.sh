@@ -13,6 +13,10 @@ release=$(grep -o "[0-9]" /etc/redhat-release |head -n1)
 vestacp="http://$CHOST/$VERSION/$release"
 # http://c.vestacp.com/rhel/6
 
+#----------------------------------------------------------#
+#                  Install Exim&Dovecot                    #
+#----------------------------------------------------------#
+yum install -y exim dovecot
 
 #----------------------------------------------------------#
 #                      Configure Exim                      #
